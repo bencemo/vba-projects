@@ -24,7 +24,7 @@ For i = 1 To 5
 	
 	For j = 1 To 5
 	
-	RowNumber = j
+		RowNumber = j
 		ColumnNumber = i
 		Cells(RowNumber, ColumnNumber).Select
 		ActiveCell = j
