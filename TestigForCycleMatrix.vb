@@ -17,10 +17,18 @@ Dim ColumnNumber As Integer
 
 For i = 1 To 5
 
-	RowNumber = i
-	ColumnNumber = 1
+	RowNumber = 1
+	ColumnNumber = i
 	Cells(RowNumber, ColumnNumber).Select
 	ActiveCell = i
+	
+	For j = 1 To 5
+	
+	RowNumber = j
+		ColumnNumber = i
+		Cells(RowNumber, ColumnNumber).Select
+		ActiveCell = j
+	Next j
 Next i
 
 End Sub
