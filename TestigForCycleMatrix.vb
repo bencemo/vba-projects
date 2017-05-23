@@ -1,4 +1,4 @@
-Sub TestingForCycleMatrix
+Sub TestingForCycleMatrix1()
 
 'Testing For cycles by filling matrixes
 
@@ -17,18 +17,19 @@ Dim ColumnNumber As Integer
 
 For i = 1 To 5
 
-	RowNumber = 1
-	ColumnNumber = i
-	Cells(RowNumber, ColumnNumber).Select
-	ActiveCell = i
-	
-	For j = 1 To 5
-	
-		RowNumber = j
-		ColumnNumber = i
-		Cells(RowNumber, ColumnNumber).Select
-		ActiveCell = j
-	Next j
+    '
+    RowNumber = i
+    ColumnNumber = 1
+    Cells(RowNumber, ColumnNumber).Select
+    ActiveCell = i
+    
+    For j = 1 To 5
+    
+        RowNumber = i
+        ColumnNumber = j
+        Cells(RowNumber, ColumnNumber).Select
+        ActiveCell = i
+    Next j
 Next i
 
 End Sub
