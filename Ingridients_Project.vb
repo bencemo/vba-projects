@@ -1,5 +1,8 @@
 Sub IngridientsCompiler()
 
+'Created for XLnoobie, requesting help on 25/05/2017 at http://bit.ly/2r2f9Gm
+'Written by Csaba Bence Molnár - u/DonKajak on 25/05/2017
+
 'Define Variables
 Dim i As Integer 'Index
 Dim j As Integer 'Numer of added ingridients
